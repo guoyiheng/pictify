@@ -1,6 +1,5 @@
 <script setup lang="ts" generic="T extends any, O extends any">
 import { UseImage } from '@vueuse/components'
-import demoJson from './demo.json'
 
 defineOptions({
   name: 'IndexPage',
@@ -9,7 +8,7 @@ defineOptions({
 /**
  * step1 get comment data
  */
-const source = $ref('https://www.dongqiudi.com/articles/2321481')
+const source = $ref('https://m.dongqiudi.com/article/3271110.html')
 const hotSize = $ref('10')
 watchEffect(() => {
   if (Number(hotSize) >= 100)
@@ -29,7 +28,7 @@ async function handleGetComment() {
 /**
  * step2 analysis comment data
  */
-const result: any = $ref(JSON.stringify(demoJson))
+const result: any = $ref('')
 const mediaList: any = $ref([])
 function handleAnalysis() {
   try {
@@ -142,8 +141,8 @@ function handlePreview(source: string) {
         3️⃣ 图片展示：
       </label>
       <div grid="~ cols-2" gap-2>
-        <div v-for="media in mediaList" :key="media">
-          <UseImage :src="media" @click="handlePreview(media)">
+        <div v-for="media in mediaList" :key="media" @click="handlePreview(media)">
+          <UseImage :src="media">
             <template #loading>
               Loading..
             </template>
