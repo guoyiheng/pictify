@@ -9,7 +9,7 @@ defineOptions({
 /**
  * step1 get comment data
  */
-const source = $ref('https://m.dongqiudi.com/article/3269876.html')
+const source = $ref('https://www.dongqiudi.com/articles/2321481')
 const hotSize = $ref('10')
 watchEffect(() => {
   if (Number(hotSize) >= 100)
@@ -17,8 +17,8 @@ watchEffect(() => {
 })
 
 async function handleGetComment() {
-  // 用正则匹配到帖子id
-  const articleId = source.match(/article\/(\d+)\.html/)?.[1]
+  // use regex to get article id
+  const articleId = source.match(/\d+/)?.[0]
   if (!articleId)
     return
   const commentUrI = `http://api.dongqiudi.com/v2/article/${articleId}/hot?size=${hotSize}`
