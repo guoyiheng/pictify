@@ -2,5 +2,5 @@
    <samp> Pictify </samp>
 </h1>
 <p align = 'center'>
-  <samp> Get pictures of the dongqiudi without watermark. </samp>
+  <samp> 获取懂球帝评论区无水印图片. </samp>
 </p>

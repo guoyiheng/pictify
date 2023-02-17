@@ -57,14 +57,14 @@ function handlePreview(source: string) {
 
 <template>
   <div>
-    <div i-carbon-campsite text-4xl inline-block />
+    <div i-mdi:watermark text-4xl inline-block />
     <p>
       <a rel="noreferrer" href="https://github.com/guoyiheng/pictify" target="_blank">
         Pictify
       </a>
     </p>
     <p>
-      <em text-sm op75> 获取懂球帝无水印图片 </em>
+      <em text-sm op75> 获取懂球帝评论区无水印图片 </em>
     </p>
 
     <div py-4 />
