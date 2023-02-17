@@ -20,7 +20,7 @@ async function handleGetComment() {
   const articleId = source.match(/\d+/)?.[0]
   if (!articleId)
     return
-  const commentUrI = `http://api.dongqiudi.com/v2/article/${articleId}/hot?size=${hotSize}`
+  const commentUrI = `https://api.dongqiudi.com/v2/article/${articleId}/hot?size=${hotSize}`
   // open link in new tab
   window.open(commentUrI, '_blank')
 }
