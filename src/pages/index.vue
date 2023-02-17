@@ -49,8 +49,8 @@ function handleAnalysis() {
 const show = $ref(false)
 const previewSource = $ref('')
 function handlePreview(source: string) {
-  show = true
-  previewSource = source
+  // show = true
+  // previewSource = source
 }
 </script>
 
