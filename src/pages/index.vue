@@ -8,7 +8,7 @@ defineOptions({
 /**
  * step1 get comment data
  */
-const source = $ref('https://m.dongqiudi.com/article/3271110.html')
+const source = $ref('https://m.dongqiudi.com/article/3278234.html')
 const hotSize = $ref('10')
 watchEffect(() => {
   if (Number(hotSize) >= 100)
